@@ -1,1 +1,3 @@
-Make v1 system today.& "C:/Users/Gaming PC/AppData/Local/Programs/Python/Python311/python.exe" "c:/Users/Gaming PC/OneDrive/Desktop/GIT FOLDER/main.py"& "C:/Users/Gaming PC/AppData/Local/Programs/Python/Python311/python.exe" "c:/Users/Gaming PC/OneDrive/Desktop/GIT FOLDER/main.py"
+Make v1 system today.
+
+well done!
