@@ -1,4 +1,4 @@
-print("1. ADD TASK\n2. SHOW TASK\n3. EXIT")
+menu = print("1. ADD TASK\n2. SHOW TASK\n3. SHOW LEVEL\n4. ADD LEVEL\n5. EXIT")
 
 command = int(input("COMMAND: ").strip())
 
@@ -16,6 +16,25 @@ elif command == 2:
         data = f.read()
         print(data)
     show_task()
+
+elif command == 3:
+    def show_level():
+        f = open("level.txt","r")
+        data = f.read()
+        print(data)
+        f.close()
+    show_level()
+
+elif command == 4:
+    def add_level():
+        f = open("level.txt","w")
+        f.write(input("UPGRADE LEVEL: "))
+        f.close()
+    add_level()
+
+
+
+
 
 
 
