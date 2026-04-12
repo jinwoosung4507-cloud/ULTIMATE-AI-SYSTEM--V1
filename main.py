@@ -1,5 +1,5 @@
 while True:
-    menu = print("1. ADD TASK\n2. SHOW TASK\n3. SHOW LEVEL\n4. ADD LEVEL\n5. EXIT")
+    menu = print("1. ADD TASK\n2. SHOW TASK\n3. SHOW LEVEL\n4. ADD LEVEL\n5. DELETE LEVEL\n6. EXIT")
 
     command = int(input("COMMAND: ").strip())
           
@@ -7,7 +7,8 @@ while True:
         def add_task():
             f = open("task.txt","+a")
             task = input("WRITE TODAYS TASKS: ")
-            f.write("\n"+task)
+            task = task.upper().strip()
+            f.write("\n"+task).upper()
             f.close()
         add_task()
 
@@ -33,6 +34,13 @@ while True:
             f.close()
         add_level()
 
+    elif command == 5:
+        def delete_task():
+            f = open("task.txt","w+")
+            f.write(input('DELETE TASK: '))
+            f.close()
+        delete_task()
+    
     else:
         break
     
