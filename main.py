@@ -56,7 +56,7 @@ while True:
 
                         removed_task = tasks.pop(index)
 
-                        with open("tasks.txt","w") as file:
+                        with open("task.txt","w") as file:
                             for task in tasks:
                                 file.write(task)
                         
